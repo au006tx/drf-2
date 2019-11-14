@@ -36,21 +36,11 @@ class Home extends React.Component {
             });
     }
 
-    // componentDidMount() {
-    //     axios.get("http://127.0.0.1:8000/tweet/")
-    //         .then(response => response.data)
-    //         .then(data => {
-    //             this.setState({
-    //                 customer: data
-    //             }); 
-    //         });
-    // }
-
     alldata() {
         return this.state.customer.map((item,index) => (            
             <div key={index}>
                 <h1 style={{color: 'red'}}>
-                {item.user_name}
+                {item.first_name}
                 </h1>
             </div>  
             )            
